@@ -1,0 +1,3 @@
+Document Object - The Document Object represents a webpage structure that is inserted in the DOM tree hierarchy and when compiled the content gets displayed on the webpage. By getting access to the document object, the users can access the HTML webpage content along with the elements by which the webpage is built. 
+
+Window Object - The Window Object is at the head position of the DOM hierarchy showing a window browser or frame.
