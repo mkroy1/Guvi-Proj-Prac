@@ -1,0 +1,52 @@
+https://jsfiddle.net/MukeshRoy/9g75mzrv/16/
+
+// in anonymous function & IIFE
+// 1. Print odd numbers in an array
+// Anonymous
+const funCall = function (arrayList) {
+  for(var i=0; i < arrayList.length;i++){
+    if (arrayList[i] % 2 != 0)
+    {
+      console.log(arrayList[i])
+    }
+  }
+}
+funCall([5,2,4,3,7]) 
+
+// IIFE
+(
+function (arrayList) {
+	for(var i=0; i < arrayList.length;i++){
+		if (arrayList[i] % 2 != 0)
+  	{
+  		console.log(arrayList[i])
+  	}
+  }
+}
+) ([5,2,4,3,7]);
+
+
+// 2. Convert all the strings to title caps in a string array
+   
+ // anonymous :  
+ const funcCall = function (str) {
+                    str = str.toLowerCase().split(' ');
+                    for (var i = 0; i < str.length; i++) {
+                      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+                    } 
+                    return str.join(' ');
+                  }
+                  
+  console.log(funcCall ("mukesh kumar roy")) 
+  
+  
+  //IIFE : 
+  const iife= (function (str) {
+                    str = str.toLowerCase().split(' ');
+                    for (var i = 0; i < str.length; i++) {
+                      str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+                    } 
+               
+                    return str.join(' ');
+                  })("mukesh kumar roy");
+ console.log(iife)   
