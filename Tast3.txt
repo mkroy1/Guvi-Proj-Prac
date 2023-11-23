@@ -33,9 +33,9 @@ var request=new XMLHttpRequest();
 request.open('GET','https://restcountries.com/v3.1/all','true');
 request.send();
 request.onload=function (){
-    var countryData=JSON.parse(this.response);
-    countryData.forEach((data)=>{
-        console.log(data.flags.png);
+    var countryelement=JSON.parse(this.response);
+    countryelement.forEach((element)=>{
+        console.log(element.flags.png);
     })}
 	
 3. 
@@ -44,7 +44,30 @@ var request=new XMLHttpRequest();
 request.open('GET','https://restcountries.com/v3.1/all','true');
 request.send();
 request.onload=function (){
-    var countryData=JSON.parse(this.response);
-    countryData.forEach((data)=>{
-        console.log(data.name.common,data.region,data.subregion,data.population);
+    var countryelement=JSON.parse(this.response);
+    countryelement.forEach((element)=>{
+        console.log(element.name.common,element.region,element.subregion,element.population);
     })}
+	
+
+// 3. Sum of all numbers in an array 
+//anonymous  :  
+							 const sumFunc= function(array){
+                  var sum = 0;
+                  for(var i = 0 ; i< array.length ; i++){
+                     sum = sum + array[i];
+                   }
+                   return sum;
+                }
+                console.log(sumFunc([2,3,4,5,6,7]))
+//IIFE : 
+			 	 const sumFunc1= (function(array){
+				              var sum = 0;
+				                   for(var i = 0 ; i< array.length ; i++){
+				                      sum = sum + array[i];
+				                    }
+				                    return sum;
+				         }) ([1,2,3,4])
+				  console.log(sumFunc1)
+				  
+				  
