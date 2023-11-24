@@ -68,3 +68,37 @@ var circleObj= new Circle(1.0,"red")
 console.log(circleObj)
 console.log(circleObj.getArea())
 console.log(circleObj.getCircumferance())
+
+
+
+// 3. Person class to hold all details
+
+class Person {
+  constructor(name,age,address){
+    this.name=name;
+    this.age=age;
+    this.address=address; 
+  }
+  getTitle(){
+    return name;
+  }
+  getStudio(){
+    return age;
+  }
+  getRating(){
+    return address;
+  }
+  setTitle(name){
+    this.name=name;
+  }
+  setStudio(age){
+    this.age=age;
+  }
+  setRating(rating){
+    this.address=address;
+  }
+}
+
+var pesonObj= new Person("Mukesh","30","Bangalore Karnataka - 560099")
+
+console.log(pesonObj)
