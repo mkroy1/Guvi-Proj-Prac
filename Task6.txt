@@ -1,1 +1,36 @@
 // Day 6  Task
+// 1. Class Movie
+
+class Movie {
+	constructor(title,studio,rating){
+  	this.title=title;
+    this.studio=studio;
+    this.rating=rating; 
+    	if(!rating) this.rating="PG"
+  }
+	getTitle(){
+  	return title;
+  }
+  getStudio(){
+		return studio;
+	}
+  getRating(){
+  	return rating;
+  }
+  setTitle(title){
+  	this.title=title;
+  }
+  setStudio(studio){
+  	this.studio=studio;
+  }
+  setRating(rating){
+  	this.rating=rating;
+  }
+}
+
+var bollywood1= new Movie("Tarzan","Bollywood","PG13")
+var bollywood2= new Movie("Tarzan","Bollywood")
+
+console.log(bollywood1)
+console.log(bollywood2)
+
