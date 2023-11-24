@@ -34,3 +34,37 @@ var bollywood2= new Movie("Tarzan","Bollywood")
 console.log(bollywood1)
 console.log(bollywood2)
 
+
+
+
+// 2.  Class Circle  -  area - circumferance
+class Circle{
+	constructor(radius,color){
+  	this.radius=radius;
+    this.color=color;
+  }
+  getRadaius(){
+ 		return radius;
+  }
+  getColor(){
+ 		return color;
+  }
+  setRadaius(radius){
+ 		this.radius=radius;
+  }
+  setColor(color){
+ 		this.color=color;
+  }
+  getArea(){
+  	return (Math.PI * this.radius * this.radius);
+  }
+  getCircumferance(){
+  	return (2 * Math.PI * this.radius)
+  }
+
+}
+
+var circleObj= new Circle(1.0,"red")
+console.log(circleObj)
+console.log(circleObj.getArea())
+console.log(circleObj.getCircumferance())
