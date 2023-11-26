@@ -102,3 +102,52 @@ class Person {
 var pesonObj= new Person("Mukesh","30","Bangalore Karnataka - 560099")
 
 console.log(pesonObj)
+
+// =====================================================
+
+// 4. Write a Class to calculate Uber Price 
+
+class Uber {
+  constructor(initFee,initKM,pricePerKM,totalDist){
+    this.initFee=initFee;
+    this.initKM=initKM;
+    this.totalDist=totalDist;
+    this.pricePerKM=pricePerKM; 
+  }
+  getInitFee(){
+    return initFee;
+  }
+  getInitKM(){
+    return initKM;
+  }
+  getTotalDist(){
+  	return totalDist;
+  }
+  getPricePerKM(){
+  	return pricePerKM;
+  }
+	setInitFee(initFee){
+    this.initFee=initFee;
+  }
+  setInitKM(initKM){
+    this.initKM=initKM;
+  }
+  setTotalDist(totalDist){
+  	this.totalDist= totalDist;
+  }
+  setPricePerKM(pricePerKM){
+  	this.pricePerKM= pricePerKM;
+  }
+  
+	calPricePerKM(){
+		  //console.log(this.initFee , this.totalDist  , this.pricePerKM )
+
+			return (this.initFee+((this.totalDist - 2)*this.pricePerKM))
+  }
+}
+
+var uberObj= new Uber(130,2,20,10)
+
+//console.log(uberObj)
+//uberObj.calPricePerKM()
+console.log(uberObj.calPricePerKM())
