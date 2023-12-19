@@ -50,24 +50,3 @@ request.onload=function (){
     })}
 	
 
-// 3. Sum of all numbers in an array 
-//anonymous  :  
-							 const sumFunc= function(array){
-                  var sum = 0;
-                  for(var i = 0 ; i< array.length ; i++){
-                     sum = sum + array[i];
-                   }
-                   return sum;
-                }
-                console.log(sumFunc([2,3,4,5,6,7]))
-//IIFE : 
-			 	 const sumFunc1= (function(array){
-				              var sum = 0;
-				                   for(var i = 0 ; i< array.length ; i++){
-				                      sum = sum + array[i];
-				                    }
-				                    return sum;
-				         }) ([1,2,3,4])
-				  console.log(sumFunc1)
-				  
-				  
